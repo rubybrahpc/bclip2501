@@ -1,4 +1,10 @@
 Meinbewerbungsclip::Application.routes.draw do
+  
+  root :to => 'static_pages#home'
+  
+  match "/tour", to: 'static_pages#tour'
+  match "/wissen", to: 'static_pages#wissen'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

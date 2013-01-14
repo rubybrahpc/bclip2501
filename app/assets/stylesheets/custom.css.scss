@@ -1,0 +1,283 @@
+@import "bootstrap";
+
+html {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body {
+	font-family:  Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	margin: 0;
+	background-color: #F5F5F5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: inherit;
+	font-weight: 300;
+	color: inherit;
+}
+.wrapper {
+	height: auto !important;
+	min-width: 1100px;
+	margin: 0 auto -359px;
+	min-height: 100%;
+}
+
+.header {
+	margin-bottom: 0;
+	background-color: #252525;
+	box-shadow: 2px 0 4px rgba(0, 0, 0, 0.5);
+	padding: 0 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.menu .menu-list {
+	float:	right;
+	list-style-type: none;
+	padding-top: 14px;
+}
+
+.menu .menu-item {
+	display: inline;
+	font-size: 13px;
+	margin-left: 30px;
+	a {
+	color: #FFFFFF;	
+	}
+}
+
+ul, ol {
+	margin: 0 0 9px 25px;
+}
+
+
+/*****************
+Hero UNIT
+******************/
+
+/* für Hero-Unit Boxen */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+.hero-unit {
+	background: #FFF url(buro.jpg);
+	background-position:	50% top;
+	background-repeat: no-repeat;
+	color: #FFF;
+	height: 600px;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 30px;
+	border-radius: 0;
+	padding: 60px;
+	h1 {
+		text-shadow: 0 1px 2px #000000;
+		font-size:	48px;
+		font-weight:	300;
+		margin-bottom: 12px;
+		letter-spacing: -1px;
+		line-height: 1;
+	}
+	h2 {
+		text-shadow: 0 1px 2px #000000;
+		font-size: 35px;
+		font-weight: 300;
+		margin-bottom: 50px;
+	}
+ 	ul li {
+		background-color: #FFFFFF;
+		background-repeat: no-repeat;
+		border-radius: 8px;
+		display: block;
+		height: 265px;
+		padding: 30px;
+		list-style: none outside none;
+		text-align: left;
+		p {
+			line-height: 1.5;
+		}
+		.first_paragraph {
+			color: #333333;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		.second_paragraph {
+			color: #555555;
+			font-size: 13px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.selbst {
+	background: url(user.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+.vorbereitung {
+	background: url(compass.png);
+	background-position: center bottom;
+	left: 255;
+	margin-top: 20px;
+}
+
+.unterlagen {
+	background: url(vorlagen.png);
+	background-position: center bottom;
+	left: 510px;
+}
+
+.ueberzeugen {
+	background: url(Increase-128.png);
+	background-position: center bottom;
+	left: 765px;
+	margin-top: 20px;
+}
+
+/*********************
+Container get started
+**********************/
+
+.get-started-now {
+	position: relative;
+	margin-top: -70px;
+}
+
+.button-text-panel {
+	text-align: center;
+	padding: 25px 30px;
+	h2 {
+	display: inline;	
+	}
+	a {
+		position: relative;
+		top: -3px;
+		margin-left: 20px;
+	}
+}
+
+.white-panel {
+	background-color: #FFF;
+	border: 1px solid #DADADA;
+	margin-bottom: 40px;
+	color: #333;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .075 );
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+	h2 {
+	margin: 0 0 30px 0;	
+	}
+}
+
+
+
+/************************
+Logoset
+*************************/
+
+.logoset {
+	min-width: 1100px;
+	margin: 5px 0 60px -20px;
+	a {
+	margin-right: 10px;	
+	}
+}
+
+/**************************
+better-manage
+***************************/
+
+.better-manage {
+	position: relative;
+}
+
+
+
+.padding-large {
+	padding: 45px;
+}
+
+.white-panel h2 {
+	margin: 0 0 30px 0;
+}
+
+.green-checks {
+	margin: 30px 0px;
+	list-style: none;
+	li {
+	margin-bottom: 15px;	
+	padding-left: 35px;
+	padding-top: 2px;
+	font-size: 15px;
+	background-image: url(green-tick.png);
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+	}
+}
+
+.small-text {
+	color: #CCC;
+	font-size: 12px;
+	margin: 15px 0px;
+}
+
+.slider-container {
+	position: absolute;
+	bottom: 0;
+	right: -20px;
+	overflow: hidden;
+}
+
+.slider {
+	overflow: hidden;
+}
+
+ul.slider {
+	list-style: none;
+	margin: 0px;
+}
+
+li.linebreak {
+	margin-top: 100px;
+}
+
+.box_rechts {
+	padding: 45px;
+	h2 {
+		font-size: 20px;
+		font-weight: 300;
+		margin-bottom: 10px;
+	}
+	
+}
+
+p.boxpara {
+		margin-bottom: 15px;	
+		
+		padding-top: 2px;
+		font-size: 15px;
+}
+
+.book {
+	width: 150px;
+	padding-top: 50px;
+}
+
+#test1 {
+	margin-top: 70px;
+}
+
+#test2 {
+	margin-top: 50px;
+}
