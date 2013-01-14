@@ -122,15 +122,15 @@ Hero UNIT
 	background-repeat: no-repeat;
 }
 
-.vorbereitung {
-	background: url(compass.png);
+.unterlagen {
+	background: url(vorlagen.png);
 	background-position: center bottom;
 	left: 255;
 	margin-top: 20px;
 }
 
-.unterlagen {
-	background: url(vorlagen.png);
+.vorbereitung {
+	background: url(compass.png);
 	background-position: center bottom;
 	left: 510px;
 }
@@ -271,7 +271,8 @@ p.boxpara {
 
 .book {
 	width: 150px;
-	padding-top: 50px;
+	padding-top: 60px;
+	margin-left: -28px;
 }
 
 #test1 {
@@ -280,4 +281,17 @@ p.boxpara {
 
 #test2 {
 	margin-top: 50px;
+}
+
+.glyphicon_bar {
+	border-bottom: 1px solid #DADADA;
+}
+
+.glyphicon {
+	opacity: 0.6;
+	padding: 30px 60px 30px 60px;
+}
+
+.youtube {
+	padding-right: 60px;
 }
