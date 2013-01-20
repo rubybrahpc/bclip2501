@@ -1,5 +1,7 @@
 Meinbewerbungsclip::Application.routes.draw do
   
+  get "users/new"
+
   root :to => 'static_pages#home'
   
   match "/tour", to: 'static_pages#tour'
