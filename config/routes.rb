@@ -1,8 +1,9 @@
 Meinbewerbungsclip::Application.routes.draw do
-  
-  get "users/new"
+  resources :users
 
-  root :to => 'static_pages#home'
+  root to: 'static_pages#home'
+  
+  match '/signup', to: 'users#new'
   
   match "/tour", to: 'static_pages#tour'
   match "/wissen", to: 'static_pages#wissen'
