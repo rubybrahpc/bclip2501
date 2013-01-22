@@ -15,7 +15,7 @@ body {
 	font-family:  Helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
-	margin: 0;
+	padding-top: 40px;
 	background-color: #F5F5F5;
 }
 
@@ -25,40 +25,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	color: inherit;
 }
-.wrapper {
-	height: auto !important;
-	min-width: 1100px;
-	margin: 0 auto -359px;
-	min-height: 100%;
+
+
+/****** HEADER *******/
+
+#logo {
+	float: left;
+	margin-right: 10px;
+	font-size: 1.7em;
+	color: #FFF;
+	padding-top: 9px;
+	line-height: 1;
 }
 
-.header {
-	margin-bottom: 0;
-	background-color: #252525;
-	box-shadow: 2px 0 4px rgba(0, 0, 0, 0.5);
-	padding: 0 20px;
-	position: relative;
-	z-index: 2;
-}
 
-.menu .menu-list {
-	float:	right;
-	list-style-type: none;
-	padding-top: 14px;
-}
-
-.menu .menu-item {
-	display: inline;
-	font-size: 13px;
-	margin-left: 30px;
-	a {
-	color: #FFFFFF;	
-	}
-}
-
-ul, ol {
-	margin: 0 0 9px 25px;
-}
 
 /*****************
 Forms
@@ -219,13 +199,7 @@ Container get started
 Logoset
 *************************/
 
-.logoset {
-	min-width: 1100px;
-	margin: 5px 0 60px -20px;
-	a {
-	margin-right: 10px;	
-	}
-}
+
 
 /**************************
 better-manage
