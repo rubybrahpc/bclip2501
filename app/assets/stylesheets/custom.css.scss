@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	font-family:  Helvetica, sans-serif;
+	font-family:  'Helvetica', sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	padding-top: 40px;
@@ -30,16 +30,24 @@ h1, h2, h3, h4, h5, h6 {
 /****** HEADER *******/
 
 #logo {
+	font-family: 'Helvetica';
 	float: left;
 	margin-right: 10px;
 	font-size: 1.7em;
-	color: #FFF;
+	color: #F5F5F5;
+	font-weight: 700;
 	padding-top: 9px;
 	line-height: 1;
 }
 
 #btn-login {
 	margin-top: 9px;
+}
+
+#icon {
+	float: left;
+	margin-top: 3px;
+	width: 35px;
 }
 
 /*****************
@@ -304,8 +312,4 @@ p.boxpara {
 .youtube {
 	padding-right: 10px;
 	padding-left: 50px;
-}
-
-.bewerbungsmappen {
-	padding-left: 45px;
 }
