@@ -1,13 +1,13 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
 	<div class="navbar-inner ">
   	<div class="container">
-    	<%= link_to "mein Bewerbungsclip", '#', id: "logo" %>
+    	<%= link_to "MeinBewerbungsClip.com", root_path, id: "logo" %>
      <nav>
        <ul class="nav pull-right">
-         <li><%= link_to "Startseite",    '#' %></li>
-         <li><%= link_to "Tour",    '#' %></li>
-         <li><%= link_to "Preis", '#' %></li>
-         <li><%= link_to "Bewerbungstipps", '#' %></li>
+         <li><%= link_to "Startseite",    root_path %></li>
+         <li><%= link_to "Tour",    tour_path %></li>
+         <li><%= link_to "Preise", '#' %></li>
+         <li><%= link_to "Bewerbungstipps", wissen_path %></li>
 				<% if signed_in? %>
 						<li id="fat-menu" class="dropdown">
 						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -23,9 +23,10 @@
 		          </ul>
 		        </li>
 				<% else %>
-						<li class="menu-item login-item">
-							<a href="#" class="btn btn-inverse btn-mini">Login</a>
-						</li>
+					
+							<%= link_to 'Registrieren', signin_path, class: "btn btn-mini btn-success", id: "btn-login"%>
+							<%= link_to 'Login', signin_path, class: "btn btn-mini", id: "btn-login"%>
+						
 				<% end %>
        </ul>
      </nav>
