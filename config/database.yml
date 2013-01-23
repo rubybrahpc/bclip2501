@@ -24,4 +24,4 @@ production:
   database: bewerbungsclip_production
   pool: 5
   username: bewerbungsclip
-  password: blclipdata9
+  password: bclipdata9
