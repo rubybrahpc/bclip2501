@@ -27,7 +27,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: bewerbungsclip_production
+  database: bclip_production
+  host: localhost
   pool: 5
-  username: bewerbungsclip
+  username: bclip
   password: bclipdata9
