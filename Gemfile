@@ -4,11 +4,15 @@ gem 'rails', '3.2.11'
 
 
 gem 'bootstrap-sass', '2.1'
-gem 'sqlite3'
+
 gem 'bcrypt-ruby', '3.0.1'
 
 # Gems used only for assets and not required
 # in production environments by default.
+
+group :development, :test do
+  gem 'sqlite3'
+end
 
 group :development do
   gem 'annotate', '2.5.0'
@@ -26,9 +30,9 @@ end
 
 gem 'jquery-rails'
 
-#group :production do
-#  gem 'pg'
-#end
+group :production do
+  gem 'pg'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
