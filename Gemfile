@@ -11,7 +11,7 @@ gem 'bcrypt-ruby', '3.0.1'
 # in production environments by default.
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 group :development do
