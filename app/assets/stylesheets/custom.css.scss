@@ -78,6 +78,16 @@ input {
   @extend .control-group;
   @extend .error;
  }
+
+.header_form {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.btn-form {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 /*****************
 Hero UNIT
 ******************/
@@ -90,6 +100,56 @@ Hero UNIT
 }
 
 .hero-unit {
+	background: #FFF url(buro.jpg);
+	background-position:	50% top;
+	background-repeat: no-repeat;
+	color: #FFF;
+	height: 400px;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 30px;
+	border-radius: 0;
+	padding: 60px;
+	h1 {
+		text-shadow: 0 1px 2px #000000;
+		font-size:	48px;
+		font-weight:	300;
+		margin-bottom: 12px;
+		letter-spacing: -1px;
+		line-height: 1;
+	}
+	h2 {
+		text-shadow: 0 1px 2px #000000;
+		font-size: 35px;
+		font-weight: 300;
+		margin-bottom: 50px;
+	}
+ 	ul li {
+		background-color: #FFFFFF;
+		background-repeat: no-repeat;
+		border-radius: 8px;
+		display: block;
+		height: 265px;
+		padding: 30px;
+		list-style: none outside none;
+		text-align: left;
+		p {
+			line-height: 1.5;
+		}
+		.first_paragraph {
+			color: #333333;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		.second_paragraph {
+			color: #555555;
+			font-size: 13px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.hero-unit-wissen {
 	background: #FFF url(buro.jpg);
 	background-position:	50% top;
 	background-repeat: no-repeat;
@@ -137,6 +197,38 @@ Hero UNIT
 			margin-bottom: 20px;
 		}
 	}
+}
+
+.up-and-away {
+	margin-top: -400px;
+	margin-bottom: 200px;
+}
+
+.up-and-away-boss {
+	margin-top: -365px;
+	margin-bottom: 200px;
+}
+
+.colorscheme {
+	background: rgba(220,220,220,0.6);
+	border-radius: 6px;
+	padding: 20px 10px 10px 10px;
+}
+
+.colorscheme2 {
+	background: rgba(220,220,220,0.9);
+	border-radius: 6px;
+	padding: 20px 10px 13px 10px;
+}
+
+.colorscheme_boss {
+	background: rgba(220,220,220,0.7);
+	border-radius: 6px;
+	padding: 25px 25px 0px 25px;
+}
+
+#bosslogin {
+	line-height: 1.5;
 }
 
 .selbst {

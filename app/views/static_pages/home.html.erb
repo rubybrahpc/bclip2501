@@ -1,13 +1,17 @@
 <div class="hero-unit">
-	<div class="container">
-		<h1>Der Leitfaden zur richtigen Bewerbung.</h1>
-		<h2>4 Schritte zum neuen Job.</h2>
-		<ul class="row">
-			
-			<li class="span3 ueberzeugen float-up">
-				<p class="first_paragraph">Überzeugen</p>
-				<p class="second_paragraph">Alles was du brauchst um das Bewerbungsgespräch meistern.</p>
-			</li>
-		</ul>
-	</div>
 </div>
+
+<div class="row container up-and-away-boss">
+  <div class="span4 offset4 colorscheme_boss">
+      <h4 id="bosslogin">Bitte geben Sie das Bewerbungs-Passwort ein:</h4></br>
+<%= form_for(@user) do |f| %>
+        <%= render 'layouts/error_messages' %>
+
+        <%= f.password_field :password, placeholder: "Passwort", autofocus: true %>
+
+        <%= f.submit "BewerbungsClip ansehen", class: "btn btn-large btn-success btn-form" %>
+      <% end %>
+  </div>
+  </div>
+</div>
+

@@ -1,7 +1,11 @@
-<h1>Sign in</h1>
+<div class="row-fluid container-fluid">
+  <div class="span4 offset4 header_form">
+    <h1>Log In</h1>
+  </div>
+</div>
 
-<div class="row">
-  <div class="span6 offset3">
+<div class="row-fluid container-fluid">
+  <div class="span4 offset4">
     <%= form_for(:session, url: sessions_path) do |f| %>
 
       <%= f.label :email %>
@@ -10,9 +14,9 @@
       <%= f.label :password %>
       <%= f.password_field :password %>
 
-      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+      <%= f.submit "Sign in", class: "btn btn-large btn-success" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <p>Du hast noch kein Konto? <%= link_to "Registriere dich!", signup_path %></p>
   </div>
 </div>
