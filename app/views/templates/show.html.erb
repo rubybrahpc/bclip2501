@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @template.user_id %>
+</p>
+
+<p>
+  <b>User name:</b>
+  <%= @template.user_name %>
+</p>
+
+<p>
+  <b>For company:</b>
+  <%= @template.for_company %>
+</p>
+
+<p>
+  <b>Video:</b>
+  <%= @template.video %>
+</p>
+
+
+<%= link_to 'Edit', edit_template_path(@template) %> |
+<%= link_to 'Back', templates_path %>

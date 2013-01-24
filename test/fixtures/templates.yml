@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  user_name: 1
+  for_company: MyString
+  video: MyString
+
+two:
+  user_id: 1
+  user_name: 1
+  for_company: MyString
+  video: MyString

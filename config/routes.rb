@@ -1,4 +1,7 @@
 Meinbewerbungsclip::Application.routes.draw do
+  resources :templates
+
+
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   

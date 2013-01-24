@@ -1,2 +1,21 @@
-<% provide(:title, @user.name) %>
-<h1><%= @user.name %></h1>
+<h1>List of Templates for <%= @user.name %></h1>
+
+<table>
+  <td class="like_h2">Template</td>
+  <td class="like_h3">updated at</td>
+
+
+<% @user.templates.each do |template| %>
+  <tr>
+    <td class="padding_right_40px"><%= template.name %></td>
+    <td class="padding_right_40px"><%= template.updated_at.strftime("%d.%m. %Rh") %></td>
+    <td><%= link_to 'Show', template %></td>
+    <td><%= link_to 'Edit', edit_template_path(template) %></td>
+    <td><%= link_to 'Destroy', template, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Create New Template', new_template_path %>
