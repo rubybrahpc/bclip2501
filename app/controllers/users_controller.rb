@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
+    @user.name = "#{@user.vorname} #{@user.nachname}"
   end
   
   def new

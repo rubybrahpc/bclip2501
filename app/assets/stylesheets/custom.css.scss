@@ -213,18 +213,28 @@ Hero UNIT
 	background: rgba(220,220,220,0.6);
 	border-radius: 6px;
 	padding: 20px 10px 10px 10px;
+	border: 1px solid #AAAAAA;
 }
 
 .colorscheme2 {
 	background: rgba(220,220,220,0.9);
 	border-radius: 6px;
 	padding: 20px 10px 13px 10px;
+	border: 1px solid #AAAAAA;
 }
 
 .colorscheme_boss {
 	background: rgba(220,220,220,0.7);
 	border-radius: 6px;
 	padding: 25px 25px 0px 25px;
+	border: 1px solid #AAAAAA;
+	&:hover {
+		background: rgba(220,220,220,0.9);
+	
+	}
+	&:active {
+		background: rgba(220,220,220,0.9);
+	}
 }
 
 #bosslogin {

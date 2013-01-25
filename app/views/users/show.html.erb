@@ -1,13 +1,16 @@
-<h1>List of Templates for <%= @user.name %></h1>
-
+<% if @user.templates.any? %>
+<h1>Liste der Templates für <%= @user.name %></h1>
 <table>
-  <td class="like_h2">Template</td>
+  <td class="like_h2">Profil</td>
+  <td class="like_h3">for company</td> 
   <td class="like_h3">updated at</td>
-
+<% else %>
+<% end %>
 
 <% @user.templates.each do |template| %>
   <tr>
-    <td class="padding_right_40px"><%= template.name %></td>
+    <td class="padding_right_40px"><%= template.id %></td>
+    <td class="padding_right_40px"><%= template.for_company %></td>
     <td class="padding_right_40px"><%= template.updated_at.strftime("%d.%m. %Rh") %></td>
     <td><%= link_to 'Show', template %></td>
     <td><%= link_to 'Edit', edit_template_path(template) %></td>
@@ -18,4 +21,4 @@
 
 <br />
 
-<%= link_to 'Create New Template', new_template_path %>
+<%= link_to 'Neues Template erstellen', new_template_path(user_id: @user.id) %>

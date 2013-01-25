@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <b>Template:</b>
+  <%= @template.id %>
+</p>
+
+<p>
   <b>User name:</b>
   <%= @template.user_name %>
 </p>
@@ -16,10 +21,21 @@
 </p>
 
 <p>
-  <b>Video:</b>
+  <b>Video location:</b>
   <%= @template.video %>
 </p>
 
 
+<div id="videos">
+ 
+    <div class="video">
+      <%= video_tag @template.video, size: "640x436", controls: true %></div>
+      <div class="actions">
+        <%= link_to "edit", edit_template_path(@template) %> |
+        <%= link_to "remove", @template, confirm: 'Are you sure?', method: :delete %>
+      </div>
+ 
+</div>
+
 <%= link_to 'Edit', edit_template_path(@template) %> |
-<%= link_to 'Back', templates_path %>
+<%= link_to 'Back', current_user %>

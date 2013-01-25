@@ -13,14 +13,13 @@
 <div class="row">
   <div class="span6 offset3">
     <div class="field">
-      <%= f.hidden_field :user_id %>
+      <%= f.hidden_field :user_id, value: params[:user_id] %>
     </div>
     <div class="field">
       <%= f.hidden_field :user_name %>
     </div>
     <div class="field">
-      <%= f.label :for_company, "für Firma:" %><br />
-      <%= f.text_field :for_company %>
+      <%= f.text_field :for_company, placeholder: "Profil für Firma", title: "Bitte dieses Feld freilassen, wenn du deinen BewerbungsClip nicht auf eine einzige Firma zuschneidest." %>
     </div>
     <div class="field">
       <%= f.file_field :video %>

@@ -13,7 +13,7 @@ class TemplatesController < ApplicationController
   # GET /templates/1
   # GET /templates/1.json
   def show
-    @template = Template.find(params[:id])
+    @template = Template.find(params[:id]) 
 
     respond_to do |format|
       format.html # show.html.erb
@@ -24,7 +24,7 @@ class TemplatesController < ApplicationController
   # GET /templates/new
   # GET /templates/new.json
   def new
-    @template = Template.new(user_id: params[:user_id])
+    @template = Template.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -44,7 +44,7 @@ class TemplatesController < ApplicationController
 
     respond_to do |format|
       if @template.save
-        format.html { redirect_to @template.user, notice: 'Template was successfully created.' }
+        format.html { redirect_to @template, notice: 'Template was successfully created.' }
         format.json { render json: @template, status: :created, location: @template }
       else
         format.html { render action: "new" }
@@ -76,7 +76,7 @@ class TemplatesController < ApplicationController
     @template.destroy
 
     respond_to do |format|
-      format.html { redirect_to @template.user }
+      format.html { redirect_to @user }
       format.json { head :no_content }
     end
   end
